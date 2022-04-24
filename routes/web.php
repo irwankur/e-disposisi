@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+
+use App\Http\Controllers\LoginController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,12 +20,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/dashboard', function () {
 
-	if(1 ==2){
-		return view('kepala_unit/dashboard');
-	} else {
-    	return view('kasubag/dashboard');
-	}
-
-});
+Route::get('/login', [LoginController::class, 'index']);
+Route::post('/login', 'LoginController@authenticate');
