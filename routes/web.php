@@ -23,3 +23,7 @@ Route::get('/', function () {
 
 Route::get('/login', [LoginController::class, 'index']);
 Route::post('/login', 'LoginController@authenticate');
+
+Route::get('/dashboard', function () {
+    return view('kasubag.dashboard');
+});

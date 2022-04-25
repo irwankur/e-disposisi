@@ -42,16 +42,25 @@
                   </div
                   @endif
 
+                 
+
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                   </div>
                   <form class="user" action="/login" method="post">
                     @csrf
                     <div class="form-group">
-                      <input type="email" class="form-control form-control-user" id="exampleInputEmail" name="email" aria-describedby="emailHelp" placeholder="Enter Email Address..." autofocus required>
+                      <input type="text" class="form-control form-control-user @error('email') is-invalid @enderror" id="exampleInputEmail" name="email" value="{{ old('email') }}" aria-describedby="emailHelp" placeholder="Enter Email Address..." autofocus required >
+
+                      @error('email')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                      @enderror
+
                     </div>
                     <div class="form-group">
-                      <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required>
+                      <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" >
                     </div>
                     <button type="submit" class="btn btn-primary btn-user btn-block">Login</button>
                   </form>
