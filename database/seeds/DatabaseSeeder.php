@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\User;
+use App\surat_masuk;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,5 +14,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UserSeeder::class);
+
+
     }
 }

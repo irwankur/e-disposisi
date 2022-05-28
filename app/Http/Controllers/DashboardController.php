@@ -9,7 +9,14 @@ class DashboardController extends Controller
     //
     public function index()
     {
-    	return view('kasubag.dashboard');
+    	$role = 1;
+
+    	if($role == 1){
+    		return view('admin.dashboard');
+    	} else {
+    		return view('kasubag.dashboard');
+    	}
+
     }
 
 }

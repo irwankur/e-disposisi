@@ -18,6 +18,8 @@
   <!-- Custom styles for this template-->
   <link href="sb-admin/css/sb-admin-2.min.css" rel="stylesheet">
 
+  <link href="sb-admin/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
@@ -33,7 +35,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+        <div class="sidebar-brand-text mx-3">SB Admin sss<sup>2</sup></div>
       </a>
 
       <!-- Divider -->
@@ -51,41 +53,13 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        Surat
+        PENGGUNA
       </div>
 
       <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="/pengguna">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>Surat Masuk</span></a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Surat Keluar</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Disposisi
-      </div>
-
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Disposisi Masuk</span></a>
-      </li>
-
-      <!-- Nav Item - Tables -->
-      <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Disposisi Keluar</span></a>
+          <span>Pengguna</span></a>
       </li>
 
       <!-- Divider -->
@@ -145,7 +119,6 @@
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
-                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -236,9 +209,11 @@
   <!-- Page level plugins -->
   <script src="sb-admin/vendor/chart.js/Chart.min.js"></script>
 
-  <!-- Page level custom scripts -->
-  <script src="sb-admin/js/demo/chart-area-demo.js"></script>
-  <script src="sb-admin/js/demo/chart-pie-demo.js"></script>
+   <!-- Page level plugins -->
+  <script src="sb-admin/vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="sb-admin/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <script src="sb-admin/js/demo/datatables-demo.js"></script>
 
 </body>
 
